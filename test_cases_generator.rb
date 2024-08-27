@@ -5,7 +5,7 @@ File.open('testcases.txt', 'w') { |file|
 
   (1..100).each do |i|
     num = rand(10**11..10**12) # Generate a 12 digit number
-    checksum = ISBNCheckSum.integer_calculator(num)
+    checksum = ISBNCheckSum.calculate(num)
 
     file.write("#{num}, #{checksum}\n") 
   end

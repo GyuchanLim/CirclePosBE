@@ -1,5 +1,5 @@
 class ISBNCheckSum
-  def self.integer_calculator(num)
+  def self.calculate(num)
     total = 0
     count = 3
 
